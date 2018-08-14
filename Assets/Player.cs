@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour {
-	[SerializeField] float xMps = 1f;
-	private float xMove;
+	[Tooltip("In mps")][SerializeField] float xSpeed = 1f;
 
 	// Use this for initialization
 	void Start () {
@@ -14,8 +12,8 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float horizontalThrow = CrossPlatformInputManager.GetAxis("Horizontal");
-		xMove = horizontalThrow * xMps;
-		print(xMove);
+		float xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
+		float xOffsetThisFrame = xThrow * xSpeed * Time.deltaTime;
+		print(xOffsetThisFrame);
 	}
 }
