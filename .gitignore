@@ -34,3 +34,9 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# Big asset store packs
+Assets/NaturalTilingTextures
+Assets/NaturalTilingTextures.meta
+Assets/SkyBox Volume 2
+Assets/SkyBox Volume 2.meta
