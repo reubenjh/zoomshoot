@@ -53,9 +53,8 @@ public class Player : MonoBehaviour {
     private void processRotation()
     {
         float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
-        float pitchWithBackwardsShipCorrection = 180f;
         float pitchDueToControlThrow = yThrow * controlPitchFactor;
-        float pitch = pitchDueToPosition + pitchWithBackwardsShipCorrection + pitchDueToControlThrow;
+        float pitch = pitchDueToPosition + pitchDueToControlThrow;
 
         float yaw = transform.localPosition.x * positionYawFactor;
 
