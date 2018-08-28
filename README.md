@@ -2,8 +2,9 @@
 
 Rail shooter in progress - defend your icy planet from the invading gurglomps!
 
-Screenshot 20/08/2018:
-<img src='screen-20aug.PNG'>
+Screenshot 26/08/2018:
+<img src='ship.PNG'>
+<img src='world-26aug.PNG'>
 
 Asset packs included in .gitignore (too large for github):
 - NaturalTilingTextures
